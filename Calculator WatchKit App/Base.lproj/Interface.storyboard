@@ -1,14 +1,115 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calculator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="C6k-55-oKh">
+                            <items>
+                                <label alignment="right" text="0" textAlignment="right" id="5Gp-8f-iQe"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="f9y-97-Rbg">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="7" id="3dv-UG-bof">
+                                    <connections>
+                                        <action selector="tapped7" destination="AgC-eL-Hgc" id="nbX-wI-vlg"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="8" id="dbW-qH-ajJ">
+                                    <connections>
+                                        <action selector="tapped8" destination="AgC-eL-Hgc" id="wnU-hw-KEw"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="9" id="lW5-au-5ua">
+                                    <connections>
+                                        <action selector="tapped9" destination="AgC-eL-Hgc" id="kvM-3o-PG3"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="+" id="5X4-cm-T0P">
+                                    <connections>
+                                        <action selector="tappedPlus" destination="AgC-eL-Hgc" id="NIu-6B-mBG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="zmO-It-vQF">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="4" id="l84-97-HIv">
+                                    <connections>
+                                        <action selector="tapped4" destination="AgC-eL-Hgc" id="oAv-28-Vpt"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="5" id="TZz-wQ-8Lb">
+                                    <connections>
+                                        <action selector="tapped5" destination="AgC-eL-Hgc" id="h0J-2w-irP"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="6" id="eNa-eH-Qk8">
+                                    <connections>
+                                        <action selector="tapped6" destination="AgC-eL-Hgc" id="GuT-6c-zOk"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="-" id="2Na-U2-gPd">
+                                    <connections>
+                                        <action selector="tappedMinus" destination="AgC-eL-Hgc" id="5R6-sN-GMR"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="eza-TF-0ln">
+                            <items>
+                                <button width="0.25" height="1" alignment="left" title="1" id="4eq-q9-9hC">
+                                    <connections>
+                                        <action selector="tapped1" destination="AgC-eL-Hgc" id="vmM-8D-baR"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="2" id="DSh-Xj-NhB">
+                                    <connections>
+                                        <action selector="tapped2" destination="AgC-eL-Hgc" id="J1y-Os-ayT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="3" id="wu7-vO-G1L">
+                                    <connections>
+                                        <action selector="tapped3" destination="AgC-eL-Hgc" id="1cn-mq-zec"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="C" id="OFK-u7-tC9">
+                                    <connections>
+                                        <action selector="tappedClear" destination="AgC-eL-Hgc" id="YW7-EZ-YVt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="qgV-sk-5DZ">
+                            <items>
+                                <button width="0.75" height="1" alignment="left" title="0" id="CeR-iS-Zcn">
+                                    <connections>
+                                        <action selector="tapped0" destination="AgC-eL-Hgc" id="UhF-oP-Krt"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="left" title="=" id="SdB-9T-ClB">
+                                    <connections>
+                                        <action selector="tappedEqual" destination="AgC-eL-Hgc" id="coX-al-WXw"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="valueLabel" destination="5Gp-8f-iQe" id="vdR-NT-5yh"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
